@@ -1,26 +1,18 @@
 import React from 'react'
 
 const SmokyText = () => {
-    const myStyle ={
-        transitionProperty: 'transform',
-        transitionDuration: '1s',
-        transitionTimingFunction: 'ease-in-out',
-        transitionDelay: '1s',
-        backgroundColor:"blue",
-        
 
-    }
     return (
-        
+
         <div className='h-screen w-full flex items-center justify-center '>
-            <ul className='text-7xl flex '>
-                <li className='rotate-45 transform translate-y-[200px]  hover:opacity-0 hover:blur-xl ' >S</li>
+            <ul className='text-7xl flex hover:[&>*]:rotate-45 hover:[&>*]:transform hover:[&>*]:blur-sm  hover:[&>*]:-translate-y-[100px] hover:[&>*]:duration-500 hover:[&>*]:transition-all hover:[&>*]:opacity-0 odd:hover:[&>*]:duration-600'>
+                <li className=''>S</li>
                 <li className=''>M</li>
                 <li className=''>O</li>
                 <li className=''>K</li>
                 <li className=''>Y</li>
             </ul>
-            <h1 style={myStyle}>this is inline styling</h1>
+
         </div>
     )
 }
