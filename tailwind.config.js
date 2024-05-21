@@ -7,6 +7,17 @@ module.exports = {
   ],
   theme: {
     extend: {
+      animation: {
+        loading: 'loading 2s linear infinite',
+      },
+      keyframes: {
+        loading: {
+          '0%': { transform: 'rotateX(0deg) rotateY(0deg)' },
+          '50%': { transform: 'rotateX(0deg) rotateY(180deg)' },
+          '100%': { transform: 'rotateX(180deg) rotateY(180deg)' },
+        },
+      },
+
       },
   },
   plugins: [],
