@@ -20,7 +20,7 @@ const TabCarousal = () => {
     };
 
     return (
-        <div className='flex justify-center items-center w-full h-full p-24'>
+        <div className='flex justify-center items-center w-full h-full p-2'>
             <div className='flex justify-center items-center w-[740px] h-[640px] relative'>
                 <FaArrowLeft onClick={prevSlide} className='absolute w-8 h-8 text-white rounded-full left-6 cursor-pointer' />
                 {tabMenu.map((item, index) => (
@@ -28,7 +28,7 @@ const TabCarousal = () => {
                         src={item.pic}
                         key={item.id}
                         alt={item.title}
-                        width={400}
+                        width={700}
                         height={400}
                         className={slide === index ? "w-full h-full shadow-md" : "hidden"}
                     />
