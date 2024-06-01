@@ -1,3 +1,4 @@
+import AnimatedPulse from "@/components/AnimatedPulse";
 import Banner from "@/components/Banner";
 import GlowingGradientButton from "@/components/GlowingGradientButton";
 import IdentityCard from "@/components/IdentityCard";
@@ -19,6 +20,7 @@ export default function Home() {
       <Banner />
       <ModalPage />
       <TabCarousal />
+      <AnimatedPulse />
     </div>
   );
 }
